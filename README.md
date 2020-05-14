@@ -1,2 +1,4 @@
 # SW_2020RiosLiraJaasiel
-Nombre. Como se sienten. ¡Hola GitHub!
+Nombre: Ríos Lira Jaasiel.
+Me siento muy bien en ekl curso he estado aprendio¿endo cada dia cosas nuevas y que se me hacen interesantes. 
+¡Hola GitHub!
