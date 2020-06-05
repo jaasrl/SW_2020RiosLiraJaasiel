@@ -1,0 +1,9 @@
+COMENTARIO: Al inico de la linea escapara un "[", despues escapara un "+" y despues tiene que estar la lada "672", despues escapara un espacio y buscara 10 numeros del 1 al 9 para despues esacapar un "["
+	    y escapar tambien un espacio para depues buscar al final de la linea ya sea Cabo, Skipper, Kowalski o Rico y saber cuales son sus numero 
+REGEX: ((^\[\+672)\s([0-9]{10})\]\s(Cabo$|Skipper$|Kowalski$|Rico$))
+
+RESPUESTAS:
+1.- [+672 7473935113] Rico
+2.- [+672 5345009331] Skipper
+3.- [+672 8766764155] Kowalski
+4.- [+672 5085533408] Cabo
