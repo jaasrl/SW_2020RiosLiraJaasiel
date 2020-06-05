@@ -1,0 +1,26 @@
+Comenario:Al inicio de la linea tiene que estar la palabra Droga, depues va a escapar un espacio, para el dia pedira que al inicio haya un 0 y despues un numero del 1 al 9 , otra de las posibilidades es
+	  que empiece con un 1 y que despues haya un numero del 1 al 9 , y la ultima posibilidad para el dia es que empice con 3 y que despues haya un numero del 0 al 1, despues escapara la "/" y para el mes 
+	  tiene que haber al inico un 0 y despues un numero del 1 al 9, y el segundo caso para el mes es que empice con un 1 y depues hay un numero del 0 al 2, despues de esto escapar otra "/" y para los año, solo
+	  buscara los años desde el 2005 al 2020  
+REGEX:  ((^Drogas)\s((([0]{1})[1-9]{1})|(([1-2]{1})[1-9]{1})|(([3]{1})[0-1]{1}))\/((([0]{1})[1-9]{1})|(([1]{1})[0-2]{1}))\/(2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020))
+
+Casos:
+1.- Drogas 22/10/2008 Hernández, Ernesto
+2.- Drogas 19/09/2018 Fernández, Pedro
+3.- Drogas 16/03/2005 Pérez, Ratón
+4.- Drogas 25/10/2018 Juárez, Miguel
+5.- Drogas 17/12/2006 Cebolla, Shrek
+6.- Drogas 27/11/2009 Bond, James
+7.- Drogas 30/10/2006 López, Ana
+8.- Drogas 19/01/2016 Juárez, Matilda
+9.- Drogas 28/03/2010 Pérez, Pedro
+10.- Drogas 31/10/2011 Juárez, Susana
+11.- Drogas 02/01/2006 Juárez, Benito
+12.- Drogas 24/05/2016 Pana, Miguel
+13.- Drogas 19/10/2014 López, Susana
+14.- Drogas 13/09/2013 De la Torre, Armando
+15.- Drogas 29/10/2019 Hernández, Susana
+16.- Drogas 15/08/2017 Cruz, Ernesto
+17.- Drogas 11/10/2013 Juárez, Ana
+18.- Drogas 07/03/2005 López-Gatell, Ana
+19.- Drogas 06/07/2008 Shang, Jorge
