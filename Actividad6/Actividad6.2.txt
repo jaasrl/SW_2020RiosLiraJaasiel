@@ -1,0 +1,6 @@
+COMENTARIO: La regex usada verifica que la palabra regex no tenga una letra antes, ni una letra despues si es asi no va a marcar la palabra, tambien se toma en cuento los acentos y la ñ, solo marcara
+	    la palabra si antes o despues de el hay un espacio o algun caracter especial.
+
+REGEX:  (?<![A-Za-zÁÉÍÓÚÑáéíóúñ])[R-r]egex(?![A-Za-zÁÉÍÓÚÑáéíóúñ])
+
+PARRAFO USADO: regex es algo genial. Hola soy un texto random que tiene la palbra "regex" 'Regex', me llamo Regex. soy muy regexpoderoso y me significo (regexé) holaregexmundo estoy muy ansioso.
