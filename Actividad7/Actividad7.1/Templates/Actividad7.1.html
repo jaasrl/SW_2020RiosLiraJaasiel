@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <!--Poner estilo al div--->
+    <style>
+    div{
+      width: 400px;
+      margin: auto;
+    }
+    </style>
+    <meta charset="utf-8">
+    <!--Tirulo que aparecera en la pestaña de la pagina-->
+    <title>Registro Profesor o Funcionario</title>
+  </head>
+  <body>
+    <!--Indicar una division en la pagina-->
+    <div>
+      <!--Iniciar un formulario que se enviara por el metodo post y que lo enviara a una pagina que es ValidacionRFC.php-->
+    <form method='post' action="../Dynamics/ValidacionRFC.php">
+          <!--Indicar un contenedor que tendra el formulario--->
+          <fieldset>
+            <!--La leyenda que tebdra el contenedor-->
+            <legend><h1>Ingresa tus datos</h1></legend>
+              <!--Dentro de un parrafo habra un input de tipo text en el cual se almacenara el RFC-->
+              <p>RFC: <input type="text" name="RFC" placeholder="Ejemplo: RLH651213" pattern="^([A-ZÑ\x26]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1]))([A-Z\d]{3})?$" title="Esto no es un RFC" required></p>
+              <!--Input de tipp text en cual estara el nombre-->
+              <p>Nombre: <input type="text" name="Nombre" placeholder="Ejemplo: Carlos" pattern='[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}' title="Este no es un nombre" required></p>
+              <!--Input de tipo texto el cual almacenara el apellido paterno-->
+              <p>Apellido Paterno: <input type="text" name="apPaterno" placeholder="Ejemplo: Perez" pattern="[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}" title="Este no es un apellido" required></p>
+              <!--Input de tipo texto que almacenara el apellido materno-->
+              <p>Apellido Materno: <input type="text" name="apMaterno" placeholder="Ejemplo: Hernandez" pattern="[a-zA-ZÁÉÍÓÚÑáéíóúñ]{3,20}" title="Este no es un apellido" required></p>
+              <!--Input de tipo date que almacenara la fecha de nacimiento-->
+              <p>Fecha de Nacimiento: <input type="date" name="nacimiento"></p>
+              <p>Colegio:
+                <!--Un select el cual va a contener los colegios que hay-->
+                <select name="Colegio">
+                  <optgroup label="I">
+                    <option>Física</option>
+                    <option>Informática</option>
+                    <option>Matemáticas</option>
+                  </optgroup>
+                  <optgroup label="II">
+                    <option>Biología</option>
+                    <option>Educación_Física</option>
+                    <option>Morfología,Fisiología_y_Salud</option>
+                    <option>Orientación_Educativa</option>
+                    <option>Psicologia_e_Higiene_Mental</option>
+                    <option>Química</option>
+                  </optgroup>
+                  <optgroup label="III">
+                    <option>Ciencias_Sociales</option>
+                    <option>Geografía</option>
+                    <option>Historia</option>
+                  </optgroup>
+                  <optgroup label="IV">
+                    <option>Alemán</option>
+                    <option>Artes_Plásticas</option>
+                    <option>Danza</option>
+                    <option>Dibujo_y_Modelado</option>
+                    <option>Filosofía</option>
+                    <option>Francés</option>
+                    <option>Inglés</option>
+                    <option>Italiano</option>
+                    <option>Letras_Clásicas</option>
+                    <option>Literatura</option>
+                    <option>Música</option>
+                    <option>Teatro</option>
+                  </optgroup>
+                  <optgroup label="Otro">
+                    <option>ETE</option>
+                  </optgroup>
+                </select>
+              </p>
+              <!--Input de tipo password que almacenara la contraseña-->
+              <p>Contraseña:<input type="password" name="pass" placeholder="Minimo 8 caracteres" minlength="8" required></p>
+              <input type="submit" value="Registrarse">
+    </div>
+  </body>
+</html>
