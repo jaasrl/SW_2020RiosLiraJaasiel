@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--El estilo que se le dara al div-->
+    <style>
+    div{
+      width: 300px;
+      margin: auto;
+    }
+    </style>
+    <meta charset="utf-8">
+    <!--Nombre que aparecera en la pestaña-->
+    <title>Registro</title>
+  </head>
+  <body>
+      <!--Indicar el inicio de una division-->
+			<div>
+        <!--Indicar un formulario que se enviara por metodo post a Cifrado.php-->
+				<form method='post' action='../Dynamics/Cifrado.php' >
+          <!--Lo que contendra al formulario-->
+          <fieldset>
+            <!--La leyenda que contendra el formulario-->
+            <legend><h1>Cifrado César</h1></legend>
+              <!--Parrafo el cual contendra un input tipe de tipo texto que tendra maximo 200 caracteres y un regex con los valores validos-->
+              <p>Texto:<input type="text" name="texto" placeholder="Maximo 200 caracteres." pattern="^[\w¿,?. ]+$" title='Letras latinas, puntos, comas y signos de interrogación.' required></p>
+              <!-- La llave la cual sera el numero de movimiento de letras que se hara-->
+              <p>Llave:<input type="number" name="key" min="1" max="25" required></p>
+              <!--Para enviar la informacion-->
+              <input type="submit" value="Encriptar">
+          </fieldset>
+        </form>
+			</div>
+  </body>
+</html>
