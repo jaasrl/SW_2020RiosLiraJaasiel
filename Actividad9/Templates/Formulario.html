@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--El estilo que se le dara al div-->
+    <style>
+    div{
+      width: 300px;
+      margin: auto;
+    }
+    </style>
+    <meta charset="utf-8">
+    <!--Nombre que aparecera en la pestaña-->
+    <title>Registro</title>
+  </head>
+  <body>
+      <!--Indicar el inicio de una division-->
+			<div>
+        <!--Indicar un formulario que se enviara por metodo post a Cifrado.php-->
+				<form method='post' action='../Dynamics/Cifrado.php' >
+          <!--Lo que contendra al formulario-->
+          <fieldset>
+            <!--La leyenda que contendra el formulario-->
+            <legend><h1>Cifrar o Descifrar</h1></legend>
+              <!--Parrafo el cual contendra un select que tendra la opcion de cifrar y descifrar-->
+              <p>Que quieres hacer:
+                <select name="Peticion">
+                  <option>Cifrar</option>
+                  <option>Descifrar</option>
+                </select>
+              </p>
+              <!-- el texto que se recibira para ecriptar o desencriptar segun sea el caso-->
+              <p>Texto:<input type="text" name="text" min="1" max="200" placeholder="Maximo 200 carcateres" equired></p>
+              <!--Para enviar la informacion-->
+              <input type="submit" value="Encriptar">
+          </fieldset>
+        </form>
+			</div>
+  </body>
+</html>
